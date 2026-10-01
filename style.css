@@ -124,6 +124,14 @@ nav a:hover {
     padding: 80px 7%;
 }
 
+.hero-image {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 
 .small-title {
     color: #4da6ff;

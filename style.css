@@ -1,3 +1,7 @@
+/* =========================
+   RESET
+========================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -36,12 +40,10 @@ body {
     top: 0;
 
     background: rgba(5,7,11,0.90);
-
     backdrop-filter: blur(15px);
 
     z-index: 1000;
 }
-
 
 .logo {
     font-size: 18px;
@@ -50,10 +52,8 @@ body {
 
     display: flex;
     align-items: center;
-
     gap: 10px;
 }
-
 
 .logo span {
     width: 35px;
@@ -64,44 +64,32 @@ body {
     justify-content: center;
 
     border: 1px solid #4da6ff;
-
     color: #4da6ff;
 
     border-radius: 50%;
 }
 
-
 nav {
     display: flex;
     align-items: center;
-
     gap: 30px;
 }
 
-
 nav a {
     color: #aaa;
-
     text-decoration: none;
-
     font-size: 14px;
-
     transition: 0.3s;
 }
-
 
 nav a:hover {
     color: white;
 }
 
-
 .x-button {
     border: 1px solid #333;
-
     padding: 10px 18px;
-
     border-radius: 30px;
-
     color: white;
 }
 
@@ -114,7 +102,6 @@ nav a:hover {
     min-height: calc(100vh - 80px);
 
     display: grid;
-
     grid-template-columns: 1fr 1fr;
 
     align-items: center;
@@ -132,19 +119,16 @@ nav a:hover {
     margin: 0 auto;
 }
 
-
 .small-title {
     color: #4da6ff;
 
     font-size: 12px;
-
     font-weight: bold;
 
     letter-spacing: 3px;
 
     margin-bottom: 25px;
 }
-
 
 .hero h1 {
     font-size: clamp(70px, 9vw, 150px);
@@ -156,11 +140,9 @@ nav a:hover {
     font-weight: 900;
 }
 
-
 .hero h1 span {
     color: #4da6ff;
 }
-
 
 .hero-text {
     max-width: 550px;
@@ -168,17 +150,14 @@ nav a:hover {
     color: #999;
 
     font-size: 19px;
-
     line-height: 1.7;
 
     margin-top: 35px;
 }
 
-
 .hero-text strong {
     color: #4da6ff;
 }
-
 
 .buttons {
     display: flex;
@@ -189,7 +168,6 @@ nav a:hover {
 
     flex-wrap: wrap;
 }
-
 
 .main-button {
     display: inline-block;
@@ -209,14 +187,11 @@ nav a:hover {
     transition: 0.3s;
 }
 
-
 .main-button:hover {
     transform: translateY(-3px);
 
-    box-shadow:
-        0 10px 40px rgba(77,166,255,0.30);
+    box-shadow: 0 10px 40px rgba(77,166,255,0.30);
 }
-
 
 .secondary-button {
     display: inline-block;
@@ -236,22 +211,15 @@ nav a:hover {
     transition: 0.3s;
 }
 
-
 .secondary-button:hover {
     border-color: #4da6ff;
-
     color: #4da6ff;
 }
 
 
 /* =========================
-   HERO IMAGE
+   HERO IMAGE BORDER
 ========================= */
-
-.hero-image {
-    position: relative;
-}
-
 
 .image-border {
     position: relative;
@@ -263,15 +231,12 @@ nav a:hover {
     background: rgba(77,166,255,0.03);
 }
 
-
 .image-border img {
     width: 100%;
-
     display: block;
 
     filter: brightness(0.90);
 }
-
 
 .image-border::before {
     content: "";
@@ -300,27 +265,25 @@ nav a:hover {
     overflow: hidden;
 
     border-top: 1px solid #222;
-
     border-bottom: 1px solid #222;
 
     padding: 22px 0;
 }
 
-
 .ticker-text {
+    display: inline-block;
+
     white-space: nowrap;
 
     color: #777;
 
     font-size: 20px;
-
     font-weight: bold;
 
     letter-spacing: 4px;
 
     animation: ticker 25s linear infinite;
 }
-
 
 @keyframes ticker {
 
@@ -331,12 +294,11 @@ nav a:hover {
     to {
         transform: translateX(-50%);
     }
-
 }
 
 
 /* =========================
-   SECTIONS
+   GENERAL SECTIONS
 ========================= */
 
 .section {
@@ -344,9 +306,8 @@ nav a:hover {
 
     max-width: 1400px;
 
-    margin: auto;
+    margin: 0 auto;
 }
-
 
 .section-number {
     color: #4da6ff;
@@ -360,7 +321,6 @@ nav a:hover {
     margin-bottom: 30px;
 }
 
-
 .section h2 {
     font-size: clamp(50px, 7vw, 100px);
 
@@ -369,24 +329,30 @@ nav a:hover {
     letter-spacing: -4px;
 }
 
-
 .section h2 span {
     color: #4da6ff;
 }
 
 
 /* =========================
-   SECTION CONTENT
+   VISION / THE IDEA
 ========================= */
+
+#vision {
+    display: block;
+}
+
+#vision h2 {
+    max-width: 900px;
+}
 
 .section-content {
     max-width: 600px;
 
-    margin-left: auto;
+    margin-left: 0;
 
     margin-top: 50px;
 }
-
 
 .section-content p {
     color: #999;
@@ -409,7 +375,6 @@ nav a:hover {
     background: #080b11;
 }
 
-
 .cards {
     display: grid;
 
@@ -419,7 +384,6 @@ nav a:hover {
 
     margin-top: 70px;
 }
-
 
 .card {
     min-height: 350px;
@@ -433,25 +397,21 @@ nav a:hover {
     transition: 0.3s;
 }
 
-
 .card:hover {
     transform: translateY(-8px);
 
     border-color: #4da6ff;
 }
 
-
 .card.featured {
     border-color: #4da6ff;
 }
-
 
 .card-number {
     color: #555;
 
     margin-bottom: 70px;
 }
-
 
 .card h3 {
     font-size: 30px;
@@ -460,7 +420,6 @@ nav a:hover {
 
     margin-bottom: 25px;
 }
-
 
 .card p {
     color: #777;
@@ -479,7 +438,6 @@ nav a:hover {
     max-width: 900px;
 }
 
-
 .roadmap-item {
     display: grid;
 
@@ -492,7 +450,6 @@ nav a:hover {
     border-top: 1px solid #222;
 }
 
-
 .roadmap-number {
     font-size: 30px;
 
@@ -501,20 +458,17 @@ nav a:hover {
     font-weight: bold;
 }
 
-
 .roadmap-item small {
     color: #4da6ff;
 
     letter-spacing: 2px;
 }
 
-
 .roadmap-item h3 {
     margin: 10px 0;
 
     font-size: 28px;
 }
-
 
 .roadmap-item p {
     color: #777;
@@ -533,7 +487,6 @@ nav a:hover {
     padding: 180px 7%;
 
     border-top: 1px solid #222;
-
     border-bottom: 1px solid #222;
 
     background:
@@ -544,7 +497,6 @@ nav a:hover {
         );
 }
 
-
 .cta p {
     color: #777;
 
@@ -552,7 +504,6 @@ nav a:hover {
 
     font-size: 18px;
 }
-
 
 .cta .main-button {
     margin-top: 10px;
@@ -567,13 +518,11 @@ nav a:hover {
     max-width: 900px;
 }
 
-
 .faq details {
     border-top: 1px solid #222;
 
     padding: 25px 0;
 }
-
 
 .faq summary {
     cursor: pointer;
@@ -582,7 +531,6 @@ nav a:hover {
 
     font-weight: bold;
 }
-
 
 .faq p {
     color: #777;
@@ -607,17 +555,14 @@ footer {
     display: flex;
 
     align-items: center;
-
     justify-content: space-between;
 
     gap: 30px;
 }
 
-
 footer p {
     color: #666;
 }
-
 
 footer a {
     color: #4da6ff;
@@ -627,7 +572,7 @@ footer a {
 
 
 /* =========================
-   MOBILE
+   TABLET
 ========================= */
 
 @media (max-width: 900px) {
@@ -636,11 +581,9 @@ footer a {
         gap: 12px;
     }
 
-
     nav a {
         font-size: 12px;
     }
-
 
     .hero {
         grid-template-columns: 1fr;
@@ -648,25 +591,25 @@ footer a {
         padding-top: 60px;
     }
 
-
     .hero-image {
         order: -1;
     }
 
-
     .cards {
         grid-template-columns: 1fr;
     }
-
 
     footer {
         flex-direction: column;
 
         align-items: flex-start;
     }
-
 }
 
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 600px) {
 
@@ -674,21 +617,17 @@ footer a {
         padding: 0 20px;
     }
 
-
     nav a:not(.x-button) {
         display: none;
     }
-
 
     .hero {
         padding: 50px 20px;
     }
 
-
     .section {
         padding: 90px 20px;
     }
-
 
     .hero h1 {
         font-size: 70px;
@@ -696,14 +635,21 @@ footer a {
         letter-spacing: -4px;
     }
 
-
     .hero-text {
         font-size: 16px;
     }
-
 
     .roadmap-item {
         grid-template-columns: 60px 1fr;
     }
 
+    .section h2 {
+        font-size: 55px;
+        letter-spacing: -2px;
+    }
+
+    .section-content {
+        margin-left: 0;
+        margin-top: 35px;
+    }
 }
